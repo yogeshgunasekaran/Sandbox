@@ -8,12 +8,7 @@ pipeline {
             }
         }
 
-       stage('Checkout') {
-             steps {
-                echo 'Hello'
-        }
-      }
-        stage('Clean workspace') {
+    stage('Clean workspace') {
         steps {
                cleanWs()
         }
@@ -23,6 +18,7 @@ pipeline {
                checkout scm: [$class: 'GitSCM', userRemoteConfigs: [[url: 'https://github.com/yogeshgunasekaran/Sandbox.git']], branches: [[name: 'origin/main']]], poll: false
         }
       }
-        
+    
     }
+    
 }
