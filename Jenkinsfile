@@ -18,7 +18,11 @@ pipeline {
                checkout scm: [$class: 'GitSCM', userRemoteConfigs: [[url: 'https://github.com/yogeshgunasekaran/Sandbox.git']], branches: [[name: 'origin/main']]], poll: false
         }
       }
-    
+      stage('Deploy web-app') {
+        steps {
+                sh 'cp -r /var/lib/jenkins/workspace/GitHub_Jenkins_Telegram_Integration/* /var/www/html/ '
+        }
+      }
     }
     
 }
