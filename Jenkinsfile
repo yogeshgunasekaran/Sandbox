@@ -20,7 +20,7 @@ pipeline {
       }
       stage('Deploy web-app') {
         steps {
-                sh 'cp -r /var/lib/jenkins/workspace/GitHub_Jenkins_Telegram_Integration/* /var/www/html/ '
+                sh 'sudo cp -r /var/lib/jenkins/workspace/GitHub_Jenkins_Telegram_Integration/* /var/www/html/ '
         }
       }
     }
