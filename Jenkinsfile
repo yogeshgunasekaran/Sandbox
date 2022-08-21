@@ -7,11 +7,12 @@ pipeline {
                 echo 'This project is to integrate GitHub, Jenkins & Telegram'
             }
         }
-    }
-}
+
        stage('Checkout') {
              steps {
                 echo 'Hello'
         }
       }
 
+    }
+}
