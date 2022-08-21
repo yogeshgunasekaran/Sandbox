@@ -9,9 +9,8 @@ pipeline {
         }
     }
 }
-   
-      stage('Checkout') {
-        steps {
+       stage('Checkout') {
+             steps {
                 echo 'Hello'
         }
       }
