@@ -9,11 +9,7 @@ pipeline {
         }
     }
 }
-    stage('Clean workspace') {
-        steps {
-               cleanWs()
-        }
-      }
+   
       stage('Checkout') {
         steps {
                 echo 'Hello'
