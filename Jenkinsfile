@@ -33,6 +33,7 @@ pipeline {
                                               <b>Branch</b>: main \
                                                <b>Build </b> : OK \
                                                <b>Test suite</b> = Passed"
+                                               ${{ github.event_name }} commit in ${{ github.repository }} by "${{ github.actor }}". [${{github.sha}}@${{ github.ref }}]
                                 """
                         }
                     }    
