@@ -38,31 +38,8 @@ pipeline {
                     }    
                 }
             }
-      when:
-      status: [success, failure]
-      format: markdown
-      message: 
-      {{#success build.status}}
-      ✅ Build #{{build.number}} of `{{repo.name}}` succeeded.
-
-      📝 Commit by {{commit.author}} on `{{commit.branch}}`:
-
-      ```
-      {{commit.message}}
-      ```
-
-      🌐 {{ build.link }}
-      {{else}}
-      ❌ Build #{{build.number}} of `{{repo.name}}` failed.
-
-      📝 Commit by {{commit.author}} on `{{commit.branch}}`:
-
-      ```
-      {{commit.message}}
-      ```
-
-      🌐 {{ build.link }}
-      {{/success}}
+      
+        
     }
     
 }
