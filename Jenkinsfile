@@ -41,7 +41,7 @@ pipeline {
       when:
       status: [success, failure]
       format: markdown
-      message: >
+      message: 
       {{#success build.status}}
       ✅ Build #{{build.number}} of `{{repo.name}}` succeeded.
 
