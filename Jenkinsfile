@@ -32,8 +32,8 @@ pipeline {
                                           curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d chat_id=${CHAT_ID} -d parse_mode="HTML" -d text="<b>Project</b> : POC \
                                               <b>Branch</b>: main \
                                                <b>Build </b> : OK \
-                                               <b>Test suite</b> = Passed"
-                                               ${{ github.event_name }} commit in ${{ github.repository }} by "${{ github.actor }}". [${{github.sha}}@${{ github.ref }}]
+                                               <b>Test suite</b> = Passed
+                                               ${{ github.event_name }} commit in ${{ github.repository }} by "${{ github.actor }}". [${{github.sha}}@${{ github.ref }}]"
                                 """
                         }
                     }    
