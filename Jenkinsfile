@@ -33,6 +33,8 @@ pipeline {
                                               <b>Branch</b>: main \
                                                <b>Build </b> : OK \
                                                <b>Test suite</b> = Passed"
+                                               commit msg : ${env.COMMIT_MESSAGE}
+
                                 """
                         }
                     }    
