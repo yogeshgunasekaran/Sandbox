@@ -35,7 +35,6 @@ pipeline {
                                                <b>Test suite</b> = Passed
                                                commit msg : ${env.COMMIT_MESSAGE}"
 
-
                                 """
                         }
                     }    
